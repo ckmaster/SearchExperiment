@@ -1,1 +1,6 @@
-<p>search-result-dashboard works!</p>
+<ul class="searchResults">
+  <li *ngFor="let searchResult of searchResults">
+    <h2>{{searchResult.title}}</h2>
+    {{searchResult.text}}
+  </li>
+</ul>

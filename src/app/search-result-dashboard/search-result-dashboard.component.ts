@@ -1,3 +1,4 @@
+import { SEARCHRESULTS } from './../../search-result-list';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search-result-dashboard.component.css']
 })
 export class SearchResultDashboardComponent implements OnInit {
+
+  searchResults = SEARCHRESULTS;
 
   constructor() { }
 
