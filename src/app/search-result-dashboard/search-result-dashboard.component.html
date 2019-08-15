@@ -1,6 +1,10 @@
-<ul class="searchResults">
-  <li *ngFor="let searchResult of searchResults">
-    <h2>{{searchResult.title}}</h2>
-    {{searchResult.text}}
-  </li>
-</ul>
+<div class="container" fxLayout="row wrap" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign="center">
+  <ul class="searchResults">
+    <div fxFlex="100%">
+        <mat-card class="card" *ngFor="let searchResult of searchResults" fxFlex="0 1 25%">
+            <mat-card-title>{{searchResult.title}}</mat-card-title>
+            <mat-card-content>{{searchResult.text}}</mat-card-content>
+        </mat-card>
+    </div>
+  </ul>
+</div>
